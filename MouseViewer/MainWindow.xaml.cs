@@ -289,7 +289,7 @@ namespace MouseViewer
                 System.Windows.MessageBox.Show("Неверное имя пользователя или пароль!");
             } else if (!isConnected)
             {
-                // ID = client.Connect(tbLogin.Text);
+                ID = client.Connect(tbLogin.Text);
                 bRun.IsEnabled = true;
                 tbLogin.IsEnabled = false;
                 tbPassword.IsEnabled = false;
@@ -303,7 +303,7 @@ namespace MouseViewer
         {
             if (isConnected)
             {
-                // client.Disconnect(ID);
+                client.Disconnect(ID);
                 bRun.IsEnabled = false;
                 tbLogin.IsEnabled = true;
                 tbPassword.IsEnabled = true;
