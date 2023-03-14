@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MouseViewer", "MouseViewer.csproj", "{3584BD9D-4023-46A2-BCED-64775F52A372}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wcf_MV", "..\wcf_MV\wcf_MV.csproj", "{BDEE5F2A-9438-49E5-AFB5-B046E84D69E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVHost", "..\MVHost\MVHost.csproj", "{952C6B7C-DE6A-436F-B3A6-55458930A00B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3584BD9D-4023-46A2-BCED-64775F52A372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3584BD9D-4023-46A2-BCED-64775F52A372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3584BD9D-4023-46A2-BCED-64775F52A372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3584BD9D-4023-46A2-BCED-64775F52A372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDEE5F2A-9438-49E5-AFB5-B046E84D69E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDEE5F2A-9438-49E5-AFB5-B046E84D69E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDEE5F2A-9438-49E5-AFB5-B046E84D69E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDEE5F2A-9438-49E5-AFB5-B046E84D69E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{952C6B7C-DE6A-436F-B3A6-55458930A00B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{952C6B7C-DE6A-436F-B3A6-55458930A00B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{952C6B7C-DE6A-436F-B3A6-55458930A00B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{952C6B7C-DE6A-436F-B3A6-55458930A00B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C958F2DE-BE5F-4ED6-BA5E-9EB4CBEC50FD}
+	EndGlobalSection
+EndGlobal

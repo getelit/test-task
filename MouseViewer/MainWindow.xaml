@@ -1,0 +1,227 @@
+﻿<Window
+    x:Class="MouseViewer.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MouseViewer"
+    Title="MouseViewer"
+    Width="746"
+    Height="450"
+    AutomationProperties.IsOffscreenBehavior="FromClip">
+    <Grid x:Name="MainWin" ContextMenuClosing="MainWin_ContextMenuClosing" Loaded="MainWin_Loaded">
+        <Grid.RowDefinitions>
+            <!--  11 rows  -->
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <!--  8 cols  -->
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+            Grid.Column="0"
+            Width="36"
+            Height="16"
+            Margin="0,0,10,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Foreground="Black"
+            Text="Логин:" />
+
+        <TextBox
+            x:Name="tbLogin"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Width="203"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Foreground="Black" />
+
+        <TextBlock
+            Grid.Row="1"
+            Grid.Column="0"
+            Width="44"
+            Height="16"
+            Margin="0,0,10,0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            FontSize="12"
+            Foreground="Black"
+            Text="Пароль:" />
+
+        <PasswordBox
+            x:Name="tbPassword"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Width="203"
+            Height="18"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="12"
+            Foreground="Black" Margin="0,48,0,0" Grid.RowSpan="2" />
+
+        <Button
+            x:Name="bSignIn"
+            Grid.Column="3"
+            Width="80"
+            Height="20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Click="bSignIn_Click"
+            Content="Войти"
+            FontSize="12"
+            Foreground="Black" />
+
+        <Button
+            x:Name="bRun"
+            Grid.Row="1"
+            Grid.Column="3"
+            Width="80"
+            Height="20"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top"
+            Click="bRun_Click"
+            Content="Запуск"
+            IsEnabled="False"
+            FontSize="12"
+            Foreground="Black" />
+
+        <DataGrid
+            x:Name="dgMouseEvents"
+            Grid.Row="2"
+            Grid.RowSpan="6"
+            Grid.ColumnSpan="4"
+            Margin="10,0,0,0"
+            AutoGenerateColumns="False"
+            FontSize="14">
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="150"
+                    Binding="{Binding Path=CreationDate}"
+                    Header="Дата/время"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="100"
+                    Binding="{Binding Path=M_Event}"
+                    Header="Событие"
+                    IsReadOnly="True" />
+                <DataGridTextColumn
+                    Width="170"
+                    Binding="{Binding Path=M_Coords}"
+                    Header="Координаты"
+                    IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBlock
+            Grid.Row="8"
+            Grid.Column="1"
+            Grid.ColumnSpan="3"
+            Height="16"
+            Margin="106,0,87,0"
+            VerticalAlignment="Center"
+            Text="Количество записей: " />
+
+        <TextBlock
+            Grid.Row="2"
+            Grid.Column="4"
+            Width="40"
+            Height="16"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Text="Фильтр" />
+
+        <TextBlock
+            Grid.Row="3"
+            Grid.Column="4"
+            Width="67"
+            Height="16"
+            Margin="23,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Text="Дата/время:" />
+
+        <TextBlock
+            Grid.Row="4"
+            Grid.Column="4"
+            Width="51"
+            Height="16"
+            Margin="39,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Событие:" />
+
+        <TextBox
+            x:Name="tbCreationDate"
+            Grid.Row="3"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Width="190"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            FontSize="12"
+            Foreground="Black" />
+
+        <TextBox
+            x:Name="tbEvent"
+            Grid.Row="4"
+            Grid.Column="5"
+            Grid.ColumnSpan="2"
+            Width="190"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            FontSize="12"
+            Foreground="Black" />
+
+        <Button
+            x:Name="bFind"
+            Grid.Row="5"
+            Grid.Column="5"
+            Width="80"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="bFind_Click"
+            Content="Найти" />
+        <Button
+            x:Name="bClear"
+            Grid.Row="8"
+            Width="71"
+            Margin="33,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="bClear_Click"
+            Content="Очистить" />
+        <TextBlock
+            x:Name="tbAmount"
+            Grid.Row="8"
+            Grid.Column="3"
+            Width="65"
+            Height="16"
+            Margin="19,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Text="0" />
+
+    </Grid>
+
+
+</Window>

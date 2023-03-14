@@ -1,0 +1,12 @@
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\MVHost.exe.config
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\MVHost.exe
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\MVHost.pdb
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\wcf_MV.dll
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\wcf_MV.pdb
+C:\Users\Jendos\Desktop\task\task\MVHost\bin\Debug\wcf_MV.dll.config
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.csproj.AssemblyReference.cache
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.csproj.CoreCompileInputs.cache
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.csproj.CopyComplete
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.exe
+C:\Users\Jendos\Desktop\task\task\MVHost\obj\Debug\MVHost.pdb

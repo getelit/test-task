@@ -1,0 +1,7 @@
+C:\Users\Jendos\Desktop\task\task\wcf_MV\bin\Debug\wcf_MV.dll.config
+C:\Users\Jendos\Desktop\task\task\wcf_MV\bin\Debug\wcf_MV.dll
+C:\Users\Jendos\Desktop\task\task\wcf_MV\bin\Debug\wcf_MV.pdb
+C:\Users\Jendos\Desktop\task\task\wcf_MV\obj\Debug\wcf_MV.csproj.AssemblyReference.cache
+C:\Users\Jendos\Desktop\task\task\wcf_MV\obj\Debug\wcf_MV.csproj.CoreCompileInputs.cache
+C:\Users\Jendos\Desktop\task\task\wcf_MV\obj\Debug\wcf_MV.dll
+C:\Users\Jendos\Desktop\task\task\wcf_MV\obj\Debug\wcf_MV.pdb
