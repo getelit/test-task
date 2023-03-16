@@ -351,12 +351,13 @@ namespace MouseViewer
                 ShowWarning(failAuthMessage, 3, "Red");
             } else if (!isConnected)
             {
-                // ID = client.Connect(tbLogin.Text);
+                ID = client.Connect(tbLogin.Text);
                 
                 string successAuthMessage = $"Вы авторизовались как {tbLogin.Text}";
                 ShowWarning(successAuthMessage, 3, "Green");
 
                 bRecord.IsEnabled = true;
+
                 tbLogin.IsEnabled = false;
                 tbPassword.IsEnabled = false;
                 isConnected = true;
@@ -369,8 +370,9 @@ namespace MouseViewer
         {
             if (isConnected)
             {
-                // client.Disconnect(ID);
+                client.Disconnect(ID);
                 bRecord.IsEnabled = false;
+
                 tbLogin.IsEnabled = true;
                 tbPassword.IsEnabled = true;
                 isConnected = false;
