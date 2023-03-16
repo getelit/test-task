@@ -1,0 +1,39 @@
+﻿<Window
+    x:Class="MouseViewer.SendWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:MouseViewer"
+    Title="Отправка записей"
+    Width="270"
+    Height="110"
+    WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock
+            Margin="10,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="Отправить "
+            TextWrapping="Wrap" />
+        <TextBox
+            Width="73"
+            Margin="77,10,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            TextWrapping="Wrap" />
+        <Button
+            x:Name="bSendMsg"
+            Width="73"
+            Margin="77,37,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="bSendMsg_Click"
+            Content="Отправить" />
+        <TextBlock
+            Margin="164,6,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="последних записей"
+            TextWrapping="Wrap" />
+
+    </Grid>
+</Window>

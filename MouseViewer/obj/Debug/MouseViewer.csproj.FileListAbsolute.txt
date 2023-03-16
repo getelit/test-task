@@ -51,3 +51,5 @@ C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\MouseViewer.csproj.CoreC
 C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\MouseViewer.csproj.CopyComplete
 C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\MouseViewer.exe
 C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\MouseViewer.pdb
+C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\SendWindow.g.cs
+C:\Users\Jendos\Desktop\task\task\MouseViewer\obj\Debug\SendWindow.baml

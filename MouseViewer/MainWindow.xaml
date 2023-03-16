@@ -51,7 +51,8 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             FontSize="12"
-            Foreground="Black" />
+            Foreground="Black"
+            Text="Jonas" />
 
         <TextBlock
             Grid.Row="1"
@@ -67,14 +68,17 @@
 
         <PasswordBox
             x:Name="tbPassword"
+            Grid.RowSpan="2"
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Width="203"
             Height="18"
+            Margin="0,48,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             FontSize="12"
-            Foreground="Black" Margin="0,48,0,0" Grid.RowSpan="2" />
+            Foreground="Black"
+            Password="123" />
 
         <Button
             x:Name="bSignIn"
@@ -89,18 +93,18 @@
             Foreground="Black" />
 
         <Button
-            x:Name="bRun"
+            x:Name="bRecord"
             Grid.Row="1"
             Grid.Column="3"
             Width="80"
             Height="20"
             HorizontalAlignment="Center"
             VerticalAlignment="Top"
-            Click="bRun_Click"
+            Click="bRecord_Click"
             Content="Запуск"
-            IsEnabled="False"
             FontSize="12"
-            Foreground="Black" />
+            Foreground="Black"
+            IsEnabled="False" />
 
         <DataGrid
             x:Name="dgMouseEvents"
@@ -202,6 +206,15 @@
             Click="bFind_Click"
             Content="Найти" />
         <Button
+            x:Name="bCancel"
+            Grid.Row="5"
+            Grid.Column="6"
+            Width="80"
+            Height="20"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Отменить" Click="bCancel_Click" />
+        <Button
             x:Name="bClear"
             Grid.Row="8"
             Width="71"
@@ -220,6 +233,19 @@
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Text="0" />
+        <Label
+            x:Name="lWarning"
+            Grid.Column="4"
+            Grid.ColumnSpan="3"
+            Width="287"
+            Margin="10,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Content="Авторизация"
+            FontSize="14"
+            FontWeight="Medium"
+            Foreground="Green"
+            Visibility="Hidden" />
 
     </Grid>
 
