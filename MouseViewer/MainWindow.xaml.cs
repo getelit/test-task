@@ -441,8 +441,8 @@ namespace MouseViewer
 
         public void SendMsgMail(string mail, string message)
         {
-            string mailServer = "evinius.ya@yandex.ru";
-            string mailClient= "evinius.ya@yandex.ru";
+            string mailServer = "";
+            string mailClient= "";
 
             MailAddress server = new MailAddress(mailServer, "Server");
             MailAddress client = new MailAddress(mailClient, "Client");
