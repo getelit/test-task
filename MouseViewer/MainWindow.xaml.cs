@@ -453,7 +453,7 @@ namespace MouseViewer
                 using (SmtpClient smtp = new SmtpClient())
                 {
                     smtp.UseDefaultCredentials = false;
-                    smtp.Credentials = new NetworkCredential(client.Address, "qijoiuhuczworhir");
+                    smtp.Credentials = new NetworkCredential(client.Address, "");
                     msg.Subject = "Мышка";
                     msg.Body = "<h4>50 событий мышки</h4>";
                     msg.IsBodyHtml = true;
